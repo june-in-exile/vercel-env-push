@@ -1,11 +1,11 @@
-# sync-vercel-env
+# vercel-env-push
 
-Sync local `.env` files to Vercel environment variables across all environments (production, preview, development) in one command.
+Push local `.env` files to Vercel environment variables across all environments (production, preview, development) in one command.
 
 ## Install
 
 ```bash
-npm install -g sync-vercel-env
+npm install -g vercel-env-push
 ```
 
 ## Prerequisites
@@ -15,20 +15,20 @@ npm install -g sync-vercel-env
 ## Usage
 
 ```bash
-# Sync .env to all environments
-sync-vercel-env
+# Push .env to all environments
+vercel-env-push
 
 # Sync a custom file
-sync-vercel-env .env.local
+vercel-env-push .env.local
 
 # Target a specific environment
-sync-vercel-env --env prod
-sync-vercel-env --env preview
-sync-vercel-env --env dev
+vercel-env-push --env prod
+vercel-env-push --env preview
+vercel-env-push --env dev
 
 # Remove all vars without uploading
-sync-vercel-env --remove
-sync-vercel-env --env dev --remove
+vercel-env-push --remove
+vercel-env-push --env dev --remove
 ```
 
 ### `--env` options
@@ -43,7 +43,7 @@ sync-vercel-env --env dev --remove
 ## Programmatic Usage
 
 ```js
-const { sync } = require("sync-vercel-env");
+const { sync } = require("vercel-env-push");
 
 sync({ envFile: ".env.local", envFilter: "prod" });
 ```

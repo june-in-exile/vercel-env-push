@@ -18,10 +18,10 @@ for (let i = 0; i < args.length; i++) {
     case "--help":
     case "-h":
       console.log(`
-sync-vercel-env - Sync .env files to Vercel
+vercel-env-push - Push .env files to Vercel
 
 Usage:
-  sync-vercel-env [options] [env-file]
+  vercel-env-push [options] [env-file]
 
 Options:
   --env <target>   Target environment: prod, preview, dev (default: all)
@@ -29,10 +29,10 @@ Options:
   -h, --help       Show this help
 
 Examples:
-  sync-vercel-env                          # sync .env to all environments
-  sync-vercel-env .env.local               # sync custom file
-  sync-vercel-env --env prod               # production only
-  sync-vercel-env --env dev --remove       # remove dev vars only
+  vercel-env-push                          # sync .env to all environments
+  vercel-env-push .env.local               # sync custom file
+  vercel-env-push --env prod               # production only
+  vercel-env-push --env dev --remove       # remove dev vars only
 `);
       process.exit(0);
     default:

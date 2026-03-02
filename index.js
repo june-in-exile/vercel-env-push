@@ -113,7 +113,7 @@ function sync({ envFile, envFilter, removeOnly = false } = {}) {
   if (removeOnly) {
     console.log(`>>> Removing all Vercel env vars (${envLabel})\n`);
   } else {
-    console.log(`>>> Syncing '${envFile}' to Vercel (${envLabel})\n`);
+    console.log(`>>> Pushing '${envFile}' to Vercel (${envLabel})\n`);
   }
 
   // Step 1: Remove existing vars
@@ -139,7 +139,7 @@ function sync({ envFile, envFilter, removeOnly = false } = {}) {
   uploadVars(vars, environments);
 
   console.log("");
-  console.log(`Done. All vars from '${envFile}' have been synced to Vercel (${envLabel}).`);
+  console.log(`Done. All vars from '${envFile}' have been pushed to Vercel (${envLabel}).`);
 }
 
 module.exports = { sync, parseEnvFile, resolveEnvironments };
