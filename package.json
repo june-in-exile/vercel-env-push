@@ -1,0 +1,23 @@
+{
+  "name": "sync-vercel-env",
+  "version": "1.0.0",
+  "description": "Sync local .env files to Vercel environment variables across all environments",
+  "keywords": ["vercel", "env", "environment", "sync", "dotenv"],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bin": {
+    "sync-vercel-env": "./bin/cli.js"
+  },
+  "main": "src/index.js",
+  "files": ["bin", "src"],
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
