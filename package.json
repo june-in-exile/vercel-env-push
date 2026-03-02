@@ -1,13 +1,13 @@
 {
-  "name": "sync-vercel-env",
+  "name": "vercel-env-push",
   "version": "1.0.0",
   "description": "Sync local .env files to Vercel environment variables across all environments",
   "keywords": ["vercel", "env", "environment", "sync", "dotenv"],
   "license": "MIT",
-  "author": "",
+  "author": "June",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/june-in-exile/vercel-env-push"
   },
   "bin": {
     "sync-vercel-env": "./bin/cli.js"
