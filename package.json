@@ -1,19 +1,28 @@
 {
-  "name": "vercel-env-push",
+  "name": "@june-in-exile/vercel-env-push",
   "version": "1.0.0",
   "description": "Push local .env files to Vercel environment variables across all environments",
-  "keywords": ["vercel", "env", "environment", "push", "dotenv"],
+  "keywords": [
+    "vercel",
+    "env",
+    "environment",
+    "push",
+    "dotenv"
+  ],
   "license": "MIT",
   "author": "June",
   "repository": {
     "type": "git",
-    "url": "https://github.com/june-in-exile/vercel-env-push"
+    "url": "git+https://github.com/june-in-exile/vercel-env-push.git"
   },
   "bin": {
-    "vercel-env-push": "./bin/cli.js"
+    "vercel-env-push": "bin/cli.js"
   },
   "main": "src/index.js",
-  "files": ["bin", "src"],
+  "files": [
+    "bin",
+    "src"
+  ],
   "engines": {
     "node": ">=16"
   },
